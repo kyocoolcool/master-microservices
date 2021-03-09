@@ -1,12 +1,13 @@
 package com.kyocoolcool.mastermicroservices.filtering;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonFilter;
 
 /**
  * @author 陳金昌 Chris Chen
  * @version 1.0 2021/3/6 4:50 PM
  */
-@JsonIgnoreProperties({"field2","field3"})
+//@JsonIgnoreProperties({"field2","field3"})
+@JsonFilter("SomeBeanFilter")
 public class SomeBean {
     private String field1;
     private String field2;
